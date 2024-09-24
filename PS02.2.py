@@ -8,11 +8,12 @@ import requests
 import pprint
 url = 'https://jsonplaceholder.typicode.com/posts'
 params = {
-    'userid' : '1'
+    'userId' : '1'
 }
 response = requests.get(url,params=params)
-requests_json = response.json()
-pprint.pprint(requests)
+response_json = response.json()
+pprint.pprint(response_json)
+
 
 
 
